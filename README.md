@@ -1,7 +1,9 @@
 ✈️ TravelBuddy
+
 A full-stack web app for finding travel companions. Create trips, discover buddies heading to the same destinations, chat in real time, and connect with like-minded travelers.
 
 Features
+
 Authentication — Signup with email OTP verification, login with JWT sessions, password visibility toggle
 Create Trips — Post your travel plans with destination, dates, budget, travel style, and gender preference
 Browse & Join — Browse all trips, filter by destination, style, budget, duration, and gender
@@ -18,6 +20,7 @@ Frontend
 React 18 + Vite
 React Router v6
 Socket.io Client
+
 Backend
 
 Node.js + Express
@@ -26,6 +29,7 @@ bcrypt, jsonwebtoken, nodemailer
 JSON file storage (no database required to run)
 
 Getting Started
+
 Prerequisites
 Node.js 18+
 npm
@@ -43,6 +47,7 @@ npm run client
 Then open http://localhost:5173
 
 API Endpoints
+
 Method	Endpoint	Auth	Description
 POST	/api/auth/register	—	Register new user
 POST	/api/auth/verify-otp	—	Verify email OTP
@@ -57,11 +62,13 @@ GET	/api/users/matches	✓	Buddy matches
 POST	/api/users/:id/connect	✓	Connect with user
 
 Data Storage
+
 User, trip, and connection data is stored in JSON files under server/data/. These files are gitignored and created automatically on first use.
 
 To migrate to a database later, only the store modules (userStore.js, tripStore.js, connectionStore.js) need to be updated — the rest of the codebase stays the same.
 
 Roadmap
+
  MongoDB integration for persistent chat history
  Socket.io JWT authentication
  Trip detail editing and deletion
