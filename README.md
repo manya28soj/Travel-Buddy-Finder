@@ -1,5 +1,12 @@
 ✈️ TravelBuddy
 
+## Demo Video
+
+🎥 [Watch Demo](https://drive.google.com/drive/u/0/home?lfhs=2)
+
+
+
+
 A full-stack web app for finding travel companions. Create trips, discover buddies heading to the same destinations, chat in real time, and connect with like-minded travelers.
 
 Features
